@@ -1,0 +1,258 @@
+/* define root element varibale */
+
+:root {
+  --abbey: #484D4F;
+  --white: #FFFFFF;
+  --outerSpace: #273032;
+  --flamingo: #E96125;
+  --grey: #EEEEEE;
+  --doveGrey: #666666;
+  --mineShaft: #333333;
+  --font: Arial, Helvetica, sans-serif;
+  --font-light: 300;
+  --font-normal: 400;
+  --font-bold: 600;
+}
+
+/* Common CSS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  vertical-align: top;
+}
+html,body {
+  width: 100%;
+  font-family: var(--font);
+}
+
+/* Header CSS */
+
+.header {
+  background-color :var(--abbey);
+  width: 100%;
+}
+
+.topRightMenu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+
+}
+
+.topRightMenu li {
+  width: 100px;
+  cursor: pointer;
+  text-align: center;
+  color :var(--white);
+  line-height: 60px
+}
+
+.topRightMenu li:hover {
+  background-color: var(--outerSpace);
+}
+
+/* Product Listing page CSS */
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.filterSectionWrapper {
+  width: 20%;
+}
+
+/* List Product CSS */
+
+.productsGrid{   
+  width: 80%;
+}
+.productWrapper {
+  justify-content: center;
+  border: 1px solid var(--grey);
+  width: 24.7%;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  height: 330px;
+  position: relative;
+}
+.productWrapper .productImg  {
+  overflow: hidden;
+  text-align: center;
+  padding-top: 15px;
+  transition: -webkit-transform .4s ease-in-out;
+  transition: transform .4s ease-in-out;
+  transition: transform .4s ease-in-out,-webkit-transform .4s ease-in-out;
+}
+ .productWrapper .productImg img {
+  height: 185px;
+  margin: 0 auto;
+  width: auto;
+}
+.productWrapper .productImg:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.productWrapper .productName {
+  color: var(--doveGrey);
+  font-size: 14px;
+  margin: 10px 10px 0px;
+  word-break: break-word;
+  text-align: center
+}
+.productWrapper .productMeasurement {
+  color: var(--doveGrey);
+  font-size: 13px;
+  line-height: normal;
+  margin: 15px 12px 0px;
+  text-align: center
+}
+.productWrapper .productPrice {
+    color: var(--mineShaft);
+    font-weight: var(--font-bold);
+    align-self: center;
+    margin-left: 15px;
+}
+.addToCart{
+  margin-right: 15px;
+  text-align: center;
+}
+.addToCartBtn {
+  background-color:var(--flamingo);
+  border-radius: 20px;
+  border: 1px solid var(--flamingo);
+  color: var(--white);
+  font-size: 12px;
+  cursor: pointer;
+  height: 30px;
+  width: 98px;
+}
+
+/* Filter CSS */
+
+.filterSection {
+    border: 1px solid var(--grey);
+    position: relative;
+    width: 229px;
+    margin-left: 10px;
+}
+.filterUnit {
+  padding: 20px 0px 0px 20px;
+}
+.filterUnit:last-child {
+  padding-bottom: 20px;
+}
+.filterOptions {
+  padding-left:20px;
+}
+.filterUnit h2 {
+  font-weight: var(--font-bold);
+  color: var(--doveGrey);
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.filterOption {
+    line-height: normal;
+    padding-top: 20px;
+}
+.filterOption span {
+  margin-left: 5px;
+}
+
+/* error message */
+
+.errorMsg {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Cart Page CSS */
+
+.priceCartWrapper{
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.CartPageContainer .priceCartWrapper{
+  display: block;
+  text-align: center;
+}
+.CartPageContainer.productsGrid{
+ width: 100%;
+}
+.CartPageContainer .addToCart{
+  display: none
+}
+.CartPageContainer .productWrapper{
+  width: 20%;
+}
+.CartPageContainer .productWrapper .productPrice {
+  margin-left: 0px;
+}
+
+/* Product Detail CSS  */
+
+.productDetailContainer {
+  width: 100%;
+  margin-top: 50px;
+  display: inline-flex;
+}
+
+.mainProductDeatil {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.productDeatilImage {
+  height: 400px;
+  width: 40%;
+}
+
+.productDeatilImage img{
+  height: 400px;
+  width: 100%;
+}
+
+.productDeatilName {
+  color: var(--mineShaft);
+  font-size: 22px;
+  font-weight: var(--font-bold);
+  line-height: normal;
+}
+
+.productDeatilMeasurement {
+  color: var(--doveGrey);
+  font-weight: var(--font-normal);
+  font-size: 18px;
+}
+
+.productDeatilPrice {
+  color: var(--mineShaft);
+  font-weight: var(--font-normal);
+  line-height: normal;
+  font-size: 16px;
+}
+
+.productDeatilAddToCart {
+  background-color: var(--flamingo);
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: var(--white);
+  font-size: 14px;
+  height: 40px;
+  width: 100px;
+}
+
+.lineSpace{
+  margin-top: 20px; 
+}
