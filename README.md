@@ -34,7 +34,7 @@ open URL http://localhost:8080/  in your browser if it will not open after ```ya
 
 # Note
 
-### Please find completed task as per below mentioned points for your review. Please note that below mentioned points contains the list of method used for coding & also I have enlisted other possible method to complete the task in a different way. Also, I have justified the current method used. If you are looking for any other alternative method I am open to do the same. Please let me know your views.
+Please find completed task as per below mentioned points for your review. Please note that below mentioned points contains the list of method used for coding & also I have enlisted other possible method to complete the task in a different way. Also, I have justified the current method used. If you are looking for any other alternative method I am open to do the same. Please let me know your views.
 
 
 1. I have used [my starter](github.com/nisargrthakkar/react-redux-starter-kit) kit to start this project
